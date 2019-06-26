@@ -1,0 +1,529 @@
+
+/* General declarations for the whole document */
+
+html {
+  font-size: 20px;
+}
+
+body {
+  min-width: 300px;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  outline: 0;
+}
+
+
+/* The style description of the <header> tag (top of the page - a fixed element)*/
+
+header {
+  /*border: 1px solid black;*/
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  width: 84%;
+  padding: 1% 7.5% 0 7.5%;
+}
+
+.headbar {
+  /*border: 1px solid black;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vw;
+}
+
+.tesseract_img_normal {
+  height: 100px;
+  width: 100px;
+  transition: 0.2s;
+}
+
+.tesseract_img_shrunk {
+  height: 30px;
+  width: 30px;
+  transition: 0.2s;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.title_normal {
+  margin: 0 0 8px 0;
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Work Sans";
+  text-transform: uppercase;
+}
+
+.title_shrunk {
+  margin: 0 0 8px 0;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: "Work Sans";
+  text-transform: uppercase;
+}
+
+.title h2 {
+  margin: 0 0 8px 0;;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Work Sans";
+  text-transform: uppercase;
+}
+
+#headBorder {
+  border: 2px solid darkgray;
+  margin: 0 0 5px 0;
+}
+
+
+/* A necessary div to render the <header> tag correctly */
+
+.empty_space {
+  margin-top: -1%;
+  margin-bottom: 6vw;
+  width: 100%;
+  height: 1px;
+}
+
+main {
+  /*border: 1px solid black;*/
+  padding: 100px 0 50px 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+}
+
+
+/* The sidebar*/
+
+.sidebar {
+  /*border: 1px solid black;*/
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  text-align: right;
+  padding: 40px 0 0 0;
+}
+
+.sidebar h3 {
+  color: #2D3C49;
+  font-family: "Work Sans";
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.docsource {
+  padding: 0 0 0 5%;
+  margin-bottom: 25%;
+}
+
+.docsource img {
+   border-radius: 10%;
+   height: 80px;
+   width: 80px;
+}
+
+
+/* The declarations of the main grid of the page, including the <aside> tag on the left and the four <article>-s*/
+
+.projectGrid {
+  /*border: 1px solid gray;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+article h2 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: hsl(210, 14%, 53%);
+  padding-left: 5%;
+}
+
+article img {
+  float: right;
+  height: 80px;
+  width: 80px;
+}
+
+
+article a:hover {
+  text-decoration: underline;
+}
+
+.pr_1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+  padding: 0 10%;
+}
+
+.pr_2 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  padding: 0 10%;
+}
+
+.pr_3 {
+  grid-area: 2 / 1 / span 1 / span 1;
+  padding: 0 10%;
+}
+
+.pr_4 {
+  grid-area: 2 / 2 / span 1 / span 1;
+  padding: 0 10%;
+}
+
+/* The three articles in the .infosources <section> tag */
+
+.infosources {
+  /*border: 1px solid black;*/
+  position: relative;
+  left: 20%;
+  width: 72%;
+  border-top: 1px solid darkgray;
+  font-family: "Work Sans";
+}
+
+#webDev_articles {
+  color: black;
+  font-size: 2.0rem;
+  font-weight: 200;
+  padding: 0 0 0 2vw;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.webdev {
+  display: inline-block;
+  margin: 1%;
+  text-align: center;
+}
+
+.webdev img {
+  height: 200px;
+  width: 300px;
+}
+
+.webdev h3 {
+  color: #2D3C49;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+} 
+
+.webdev h4 {
+  color: #2D3C49;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.webdev a:hover{
+  text-decoration: underline;
+}
+
+
+/* The footer element with the external links and copyright */
+
+footer {
+  position: relative;
+  left: 20%;
+  width: 72%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: gray;
+  font-family: "Work Sans";
+  font-size: 0.8rem;
+  font-weight: 200;
+  border-top: 1px solid darkgray;
+}
+
+footer ul {
+  list-style: none;
+  padding-right: 10%;
+}
+
+footer li {
+  display: inline-block;
+  padding-right: 2%;
+}
+
+.copyright {
+  text-align: right;
+  padding-right: 1%;
+}
+
+
+/* Folders (Udacity, Codecademy, freeCodeCamp, Personal */
+
+.folderDiv {
+  /*border: 1px solid gray;*/
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.folderH1 {
+  color: 	hsl(210, 14%, 53%);
+}
+
+.folderSection {
+  margin: 3% 0;
+  padding: 2%;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2), 0 6px 20px 0 hsla(0, 0%, 0%, 0.19);
+}
+
+.folderProjectTitle {
+  color: hsl(16, 85%, 66%);
+}
+
+.features {
+  color: hsl(0, 0%, 70%);
+}
+
+.folderCarousel {
+  padding: 4%;
+}
+
+.folderLinks {
+  line-height: 2;
+  text-align: right;
+  font-size: 0.6em;
+}
+
+/* Five breakpoints were defined, significant change under 520px */
+
+@media only screen and (max-width: 1200px) {
+
+  .tesseract_img_normal {
+    height: 75px;
+    width: 75px;
+  }
+
+  .title_normal {
+    font-size: 2rem;
+  }
+  
+  .title_shrunk {
+    font-size: 1rem;
+  }
+  
+  .title h2 {
+    font-size: 1.0rem;
+    font-weight: 400;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  main {
+    padding: 70px 0 35px 0;
+  }
+
+  .empty_space {
+    margin-top: -1.5%;
+  }
+
+  .tesseract_img_normal {
+    height: 60px;
+    width: 60px;
+  }
+
+  .title_normal {
+    font-size: 1.7rem;
+  }
+  
+  .title_shrunk {
+    font-size: 0.8rem;
+  }
+  
+  .title h2 {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+ 
+  .sidebar h3 {
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  .docsource img {
+     height: 40px;
+     width: 40px;
+  }
+
+  article img {
+    height: 40px;
+    width: 40px;
+  }
+
+  article h2 {
+    font-size: 14px;
+  }
+
+  article p {
+    font-size: 12px;
+  }
+
+  #webDev_articles {
+     font-size: 16px;
+   }
+
+  .webdev img {
+    height: 120px;
+    width: 180px;
+  }
+  
+  .webdev h3 {
+    font-size: 14px;
+  } 
+  
+  .webdev h4 {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 10px; 
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  .empty_space {
+    margin-top: -2%;
+  }
+
+  .tesseract_img_normal {
+    height: 50px;
+    width: 50px;
+  }
+
+  .title_normal {
+    font-size: 1.4rem;
+  }
+  
+  .title h2 {
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+}
+
+/* A new grid format (two columns instead of three) is defined for width under 520px */
+
+@media only screen and (max-width: 520px) {
+
+  .empty_space {
+    margin-top: -2%;
+  }
+
+  .projectGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    padding: 0;
+  }
+
+  .pr_1 {
+    grid-area: 1 / 1 / span 1 / span 1;
+    padding: 0 10% 10% 5%;
+  }
+  
+  .pr_2 {
+    grid-area: 2 / 1 / span 1 / span 1;
+    border-top: 0;
+    padding: 0 10% 10% 5%;
+  }
+  
+  .pr_3 {
+    grid-area: 3 / 1 / span 1 / span 1;
+    padding: 0 10% 10% 5%;
+  }
+  
+  .pr_4 {
+    grid-area: 4 / 1 / span 1 / span 1;
+    padding: 0 10% 10% 5%;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .title_normal {
+    font-size: 0.9rem;
+  }
+  
+  .title_shrunk {
+    font-size: 0.6rem;
+  }
+
+  #webDev_articles {
+    text-align: center;
+    margin: 2vh 0 4vh 0;
+  }
+
+  .webdev {
+    margin: 0 0 5vh 0;        
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .empty_space {
+      margin-top: -2.6%;
+    }
+
+  .tesseract_img_normal {
+    height: 30px;
+    width: 30px;
+  }
+
+  .tesseract_img_shrunk {
+    height: 20px;
+    width: 20px;
+  }
+
+  .title h2 {
+    font-size: 0.5rem;
+    font-weight: 400;
+  }
+
+  .docsource img {
+     height: 30px;
+     width: 30px;
+  }
+
+}
