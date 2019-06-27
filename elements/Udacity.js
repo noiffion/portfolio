@@ -7,7 +7,9 @@ const Udacity = props => (
   <div>
     <Frame>
       <div className="folderDiv">
-        <h1 className="folderH1"> {props.title} projects </h1>
+        <div className="folderTitle">
+          <h1> {props.title} projects </h1>
+        </div>
   
         <section className="folderSection">
           <h2 className="folderProjectTitle"> Angkor Wat </h2>
@@ -44,6 +46,8 @@ const Udacity = props => (
             <img src="./static/DB_1.png" />
             <img src="./static/DB_2.png" />
             <img src="./static/DB_3.png" />
+            <img src="./static/DB_4.png" />
+            <img src="./static/DB_5.png" />
           </Carousel>
           <div className="folderLinks">
             <a href="https://github.com/noiffion/newsDB" target="_blank"> 

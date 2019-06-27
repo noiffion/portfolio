@@ -158,7 +158,6 @@ main {
 article h2 {
   font-size: 1.25rem;
   font-weight: 300;
-  color: hsl(210, 14%, 53%);
   padding-left: 5%;
 }
 
@@ -293,8 +292,16 @@ footer li {
   align-items: center;
 }
 
-.folderH1 {
-  color: 	hsl(210, 14%, 53%);
+.folderTitle {
+  border-radius: 5px;
+  width: 80%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: 	hsl(0, 100%, 99%);
+  background: linear-gradient(45deg, hsl(197, 71%, 77%), hsl(197, 71%, 73%));
 }
 
 .folderSection {
@@ -305,7 +312,9 @@ footer li {
 }
 
 .folderProjectTitle {
-  color: hsl(16, 85%, 66%);
+  color: hsl(197, 71%, 55%);
+  text-align: center;
+  text-decoration: underline;
 }
 
 .features {
