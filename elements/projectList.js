@@ -1,10 +1,10 @@
 const projectList = [ 
   {   
     cls: 'pr_1',
-    title: 'Udacity',
-    description: 'Here will be a brief description of the Udacity projects',
-    alt: 'Udacity logo',
-    imgSrc: './static/udacity.png' 
+    title: 'freeCodeCamp',
+    description: 'Here will be a brief description of the freeCodeCamp projects',
+    alt: 'freeCodeCamp logo',
+    imgSrc: './static/freeCodeCamp.png'
   },  
   {   
     cls: 'pr_2',
@@ -15,10 +15,10 @@ const projectList = [
   },  
   {   
     cls: 'pr_3',
-    title: 'freeCodeCamp',
-    description: 'Here will be a brief description of the freeCodeCamp projects',
-    alt: 'freeCodeCamp logo',
-    imgSrc: './static/freeCodeCamp.png' 
+    title: 'Udacity',
+    description: 'Here will be a brief description of the Udacity projects',
+    alt: 'Udacity logo',
+    imgSrc: './static/udacity.png'
   },
   {   
     cls: 'pr_4',

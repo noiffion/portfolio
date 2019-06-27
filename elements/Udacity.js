@@ -7,12 +7,17 @@ const Udacity = props => (
   <div>
     <Frame>
       <div className="folderDiv">
-        <div className="folderTitle">
-          <h1> {props.title} projects </h1>
+        <div className="folderTitle"
+             style={{color: 'hsl(0, 100%, 99%)',
+             background: 'linear-gradient(45deg, hsl(194, 88%, 50%), hsl(194, 88%, 44%))'}}
+        >
+          <h1 > {props.title} projects </h1>
         </div>
   
         <section className="folderSection">
-          <h2 className="folderProjectTitle"> Angkor Wat </h2>
+          <h2 className="folderProjectTitle"
+              style={{color: 'hsl(194, 88%, 41%)'}}
+          >Angkor Wat</h2>
           <ul className="features">
             <li>Vanilla JS</li> 
             <li>Knockout.js</li> 
@@ -25,17 +30,19 @@ const Udacity = props => (
           </Carousel>
           <div className="folderLinks">
             <a href="https://codepen.io/noiffion/project/full/XzobLE" target="_blank">
-              <span className="features"> Demo @ CodePen </span>
+              <span className="projectLinks"> Demo @ CodePen </span>
             </a>
             <br />
             <a href="https://github.com/noiffion/angkor" target="_blank">
-              <span className="features"> Source @ GitHub </span>
+              <span className="projectLinks"> Source @ GitHub </span>
             </a>
           </div>
         </section>
   
         <section className="folderSection">
-          <h2 className="folderProjectTitle"> News database </h2>
+          <h2 className="folderProjectTitle"
+              style={{color: 'hsl(194, 88%, 41%)'}}
+          >News database</h2>
           <ul className="features">
             <li>CLI</li> 
             <li>Python3</li> 
@@ -51,13 +58,15 @@ const Udacity = props => (
           </Carousel>
           <div className="folderLinks">
             <a href="https://github.com/noiffion/newsDB" target="_blank"> 
-              <span className="features"> Source @ GitHub </span> 
+              <span className="projectLinks"> Source @ GitHub </span> 
             </a>
           </div> 
         </section>
   
         <section className="folderSection">
-          <h2 className="folderProjectTitle"> Shakespeare plays </h2>
+          <h2 className="folderProjectTitle"
+              style={{color: 'hsl(194, 88%, 41%)'}}
+          >Shakespeare plays</h2>
           <ul className="features">
             <li>Python3</li> 
             <li>Flask</li> 
@@ -72,7 +81,7 @@ const Udacity = props => (
           </Carousel>
           <div className="folderLinks">
             <a href="https://github.com/noiffion/hamnet" target="_blank">
-              <span className="features"> Source @ GitHub </span> 
+              <span className="projectLinks"> Source @ GitHub </span> 
             </a>
           </div>
         </section>
