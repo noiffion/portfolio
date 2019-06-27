@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from './Header';
 import Sidebar from './Sidebar';
+import Footer from './Footer';
 
 
 const Frame = props => {
@@ -22,6 +23,7 @@ const Frame = props => {
         <Sidebar mouseOver={mouseOver} mouseOut={mouseOut} />
         {props.children}
       </main>
+      <Footer />
     </div>  
   );
 }

@@ -1,6 +1,5 @@
 const projectList = [ 
   {   
-    cls: 'fcc',
     title: 'freeCodeCamp',
     description: 'Here will be a brief description of the freeCodeCamp projects',
     alt: 'freeCodeCamp logo',
@@ -8,7 +7,6 @@ const projectList = [
     color: 'hsl(120, 33%, 42%)'
   },  
   {   
-    cls: 'codec',
     title: 'Codecademy',
     description: 'Here will be a brief description of the Codecademy projects',
     alt: 'Codecademy logo',
@@ -16,7 +14,6 @@ const projectList = [
     color: 'hsl(202, 21%, 32%)'
   },  
   {   
-    cls: 'uda',
     title: 'Udacity',
     description: 'Here will be a brief description of the Udacity projects',
     alt: 'Udacity logo',
@@ -24,7 +21,6 @@ const projectList = [
     color: 'hsl(194, 88%, 47%'
   },
   {   
-    cls: 'pers',
     title: 'Personal',
     description: 'Here will be a brief description of the other projects',
     alt: 'Personal projects picture',
