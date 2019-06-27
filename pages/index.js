@@ -9,7 +9,7 @@ const ProjectLink = props => (
   <article className={props.cls}>
     <Link href={`/folders?title=${props.title}`}>
       <a href={props.title}>
-        <h2>{props.title}</h2>
+        <h2 style={{color: props.color}}>{props.title}</h2>
         <img alt={props.alt} src={props.imgSrc} />
       </a>
     </Link>
@@ -20,8 +20,10 @@ const ProjectLink = props => (
 
 const Index = props => {
   const folders = projectList.map((project, index) => (
-    <ProjectLink key={index + '_' + project.title} cls={project.cls} title={project.title}
-                 imgSrc={project.imgSrc} description={project.description} alt={project.alt} />
+    <ProjectLink key={index + '_' + project.title} cls={project.cls} title={project.title} 
+                 color={project.color} imgSrc={project.imgSrc} description={project.description} 
+                 alt={project.alt} 
+    />
   ));
 
 
