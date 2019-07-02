@@ -71,16 +71,23 @@ const Udacity = props => (
           <li>Flask</li> 
           <li>Vanilla JS</li> 
           <li>SQLite</li> 
-          <li>Facebook + Google login</li> 
+          <li>Facebook</li> 
         </ul>
         <Carousel className="folderCarousel" cellAlign="center" height="80vh" width="70vw"> 
           <img src="./static/Shaky_0.png" />
           <img src="./static/Shaky_1.png" />
           <img src="./static/Shaky_2.png" />
+          <img src="./static/Shaky_3.png" />
+          <img src="./static/Shaky_4.png" />
+          <img src="./static/Shaky_5.png" />
         </Carousel>
         <div className="folderLinks">
           <a href="https://github.com/noiffion/hamnet" target="_blank">
             <span className="projectLinks"> Source @ GitHub </span> 
+          </a>
+          <br />
+          <a href="https://noiffion.pythonanywhere.com/" target="_blank">
+            <span className="projectLinks"> Demo @ Pythonanywhere </span>
           </a>
         </div>
       </section>
