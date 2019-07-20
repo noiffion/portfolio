@@ -17,32 +17,39 @@ const Personal = props => (
           Issue Tracker
         </h2>
         <ul className="features">
-          <li></li>
+          <li>MongoDb</li>
+          <li>Express.js</li>
+          <li>React</li>
+          <li>Node</li>
+          <li>Webpack</li>
         </ul>
         <Carousel className="folderCarousel">
           <Carousel.Item>
-            <img src="" />
+            <img src="./static/Itracker_0.png" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="" />
+            <img src="./static/Itracker_1.png" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="" />
+            <img src="./static/Itracker_2.png" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="" />
+            <img src="./static/Itracker_3.png" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="" />
+            <img src="./static/Itracker_4.png" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="" />
+            <img src="./static/Itracker_5.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Itracker_6.png" />
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://learn.freecodecamp.org" target="_blank">
-            <span className="projectLinks"></span>
-          </a>
+          <a href="https://noiffion-issue-tracker.glitch.me/" target="_blank">
+            <span className="projectLinks">Issue Tracker</span>
+          </a> @ Glitch
         </div>
       </section>
 

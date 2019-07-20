@@ -1,5 +1,5 @@
-import Carousel from 'react-bootstrap/Carousel';
 import Frame from '../frame/Frame';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 const Codecademy = props => (
