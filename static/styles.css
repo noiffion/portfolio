@@ -155,6 +155,10 @@ main {
   padding: 5% 10% 0 10%;
 }
 
+article {
+  /*border: 1px solid black;*/
+}
+
 article h2 {
   font-size: 1.25rem;
   font-weight: 300;
@@ -182,7 +186,7 @@ article a:hover {
 
 .infosources {
   /*border: 1px solid black;*/
-  margin: 20% 10% 0 10%;
+  margin: 20% 0 0 0;
   border-top: 1px solid darkgray;
   font-family: "Work Sans";
 }
@@ -201,8 +205,10 @@ article a:hover {
 }
 
 .webdev {
+  /*border: 1px solid black;*/
   display: inline-block;
   text-align: center;
+  padding: 1%;
 }
 
 .webdev img {
@@ -572,7 +578,7 @@ footer li {
   }
 
   .webdev {
-    margin: 0 0 5vh 0;        
+    margin: 0 0 5% 0;        
   }
 
 }
