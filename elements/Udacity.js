@@ -1,4 +1,4 @@
-import Carousel from 'nuka-carousel';
+import Carousel from 'react-bootstrap/Carousel';
 import Frame from '../frame/Frame';
 import Footer from '../frame/Footer';
 
@@ -14,18 +14,24 @@ const Udacity = props => (
       </div>
 
       <section className="folderSection">
-        <h2 className="folderProjectTitle"
-            style={{color: 'hsl(194, 88%, 41%)'}}
-        >Angkor Wat</h2>
+        <h2 className="folderProjectTitle" style={{color: 'hsl(194, 88%, 41%)'}}>
+          Angkor Wat
+        </h2>
         <ul className="features">
           <li>Vanilla JS</li> 
           <li>Knockout.js</li> 
           <li>APIs: Google Maps + Flickr </li> 
         </ul>
-        <Carousel className="folderCarousel" cellAlign="center" height="80vh" width="70vw"> 
-          <img src="./static/Angkor_0.png" />
-          <img src="./static/Angkor_1.png" />
-          <img src="./static/Angkor_2.png" />
+        <Carousel className="folderCarousel"> 
+          <Carousel.Item>
+            <img src="./static/Angkor_0.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Angkor_1.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Angkor_2.png" />
+          </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
           <a href="https://codepen.io/noiffion/project/full/XzobLE" target="_blank">
@@ -39,21 +45,33 @@ const Udacity = props => (
       </section>
 
       <section className="folderSection">
-        <h2 className="folderProjectTitle"
-            style={{color: 'hsl(194, 88%, 41%)'}}
-        >News database</h2>
+        <h2 className="folderProjectTitle" style={{color: 'hsl(194, 88%, 41%)'}}> 
+          News database
+        </h2>
         <ul className="features">
           <li>CLI</li> 
           <li>Python3</li> 
           <li>PostgreSQL</li> 
         </ul>
-        <Carousel className="folderCarousel" cellAlign="center" height="80vh" width="70vw"> 
-          <img src="./static/DB_0.png" />
-          <img src="./static/DB_1.png" />
-          <img src="./static/DB_2.png" />
-          <img src="./static/DB_3.png" />
-          <img src="./static/DB_4.png" />
-          <img src="./static/DB_5.png" />
+        <Carousel className="folderCarousel" > 
+          <Carousel.Item>
+            <img src="./static/DB_0.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/DB_1.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/DB_2.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/DB_3.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/DB_4.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/DB_5.png" />
+          </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
           <a href="https://github.com/noiffion/newsDB" target="_blank"> 
@@ -63,9 +81,9 @@ const Udacity = props => (
       </section>
 
       <section className="folderSection">
-        <h2 className="folderProjectTitle"
-            style={{color: 'hsl(194, 88%, 41%)'}}
-        >Shakespeare plays</h2>
+        <h2 className="folderProjectTitle" style={{color: 'hsl(194, 88%, 41%)'}}>
+          Shakespeare plays
+        </h2>
         <ul className="features">
           <li>Python3</li> 
           <li>Flask</li> 
@@ -73,13 +91,25 @@ const Udacity = props => (
           <li>SQLite</li> 
           <li>Facebook</li> 
         </ul>
-        <Carousel className="folderCarousel" cellAlign="center" height="80vh" width="70vw"> 
-          <img src="./static/Shaky_0.png" />
-          <img src="./static/Shaky_1.png" />
-          <img src="./static/Shaky_2.png" />
-          <img src="./static/Shaky_3.png" />
-          <img src="./static/Shaky_4.png" />
-          <img src="./static/Shaky_5.png" />
+        <Carousel className="folderCarousel"> 
+          <Carousel.Item>
+            <img src="./static/Shaky_0.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Shaky_1.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Shaky_2.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Shaky_3.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Shaky_4.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Shaky_5.png" />
+          </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
           <a href="https://github.com/noiffion/hamnet" target="_blank">

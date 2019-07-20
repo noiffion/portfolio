@@ -23,9 +23,9 @@ const Folders = withRouter(props => {
     } 
 
     return (
-      <div>
+      <>
         {folder}
-      </div>
+      </>
     )
   }
 );

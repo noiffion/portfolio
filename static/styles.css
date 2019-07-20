@@ -140,9 +140,9 @@ main {
 }
 
 .docsource img {
-   border-radius: 10%;
-   height: 80px;
-   width: 80px;
+  border-radius: 10%;
+  height: 80px;
+  width: 80px;
 }
 
 
@@ -152,7 +152,7 @@ main {
   /*border: 1px solid black;*/
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 5% 10% 0 10%;
 }
 
 article h2 {
@@ -173,7 +173,7 @@ article a:hover {
 }
 
 .projectFolder {
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
   padding: 0% 15% 8% 5%;
 }
 
@@ -269,6 +269,8 @@ footer li {
 
 .folderDiv {
   /*border: 1px solid gray;*/
+  margin: 0 0 0 20px; 
+  width: 82vw;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -278,21 +280,16 @@ footer li {
 .folderTitle {
   border-radius: 5px;
   width: 80%;
-  height: 20vh;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /*
-   * color: 	hsl(0, 100%, 99%);
-   * background: linear-gradient(45deg, hsl(197, 71%, 77%), hsl(197, 71%, 73%));
-   *
-   */
 }
 
 .folderSection {
-  margin: 3% 0;
-  padding: 2%;
+  margin: 3% 2%;
+  padding: 4%;
   background-color: hsl(0, 0%, 98%);
   box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2), 0 6px 20px 0 hsla(0, 0%, 0%, 0.19);
 }
@@ -319,7 +316,7 @@ footer li {
   text-decoration: underline;
 }
 .folderCarousel {
-  padding: 4%;
+  padding: 0 4% 4% 4%;
 }
 
 .folderLinks {
@@ -367,6 +364,10 @@ footer li {
     width: 60px;
   }
 
+  .tesseract_img_shrunk {
+    padding: 10px 0 3px 0;
+  }
+
   .title_normal {
     font-size: 1.7rem;
   }
@@ -378,6 +379,20 @@ footer li {
   .title h2 {
     font-size: 0.8rem;
     font-weight: 400;
+  }
+
+  .folderTitle h1 {
+    font-size: 1.4rem;
+  }
+
+  .folderSection h2 {
+    margin: 5px 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  .features {
+    font-size: 0.7rem;
+    padding: 20px 0 0 18px;
   }
  
   .sidebar h3 {
@@ -436,14 +451,53 @@ footer li {
     width: 50px;
   }
 
+  .tesseract_img_shrunk {
+    padding: 10px 0 3px 0;
+  }
+
   .title_normal {
     font-size: 1.4rem;
+    padding: 5px 0 0 0;
   }
-  
+
   .title h2 {
     font-size: 0.6rem;
     font-weight: 400;
   }
+
+  .title_shrunk {
+    font-size: 0.6rem;
+    padding: 15px 0 0 0;
+  }
+
+  .folderTitle {
+    height: 60px;
+    padding: 7px 0 0 0;
+  }
+
+  .folderTitle h1 {
+    font-size: 1rem;
+  }
+
+  .folderSection h2 {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+  }
+
+  .features {
+    font-size: 0.5rem;
+    padding: 20px 0 0 18px;
+  }
+
+  .folderLinks {
+    text-align: right;
+    line-height: normal;
+  }
+
+  .projectLinks {
+    font-size: 0.5rem;
+  }
+
 }
 
 /* A new grid format (two columns instead of three) is defined for width under 520px */
@@ -458,12 +512,58 @@ footer li {
     flex-direction: column;
   }
 
+  .tesseract_img_shrunk {
+    margin: 5px 0 0 0px;
+    height: 25px;
+    width: 25px;
+  }
+
   .title_normal {
     font-size: 0.9rem;
+    padding: 10px 0 0 0;
   }
   
   .title_shrunk {
     font-size: 0.6rem;
+    padding: 12px 0 3px 0;
+  }
+
+  .projectGrid {
+    padding: 5% 0 0 0;
+  }
+
+  .folderDiv {
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .folderTitle {
+    height: 40px;
+    padding: 7px 0 0 0;
+  }
+
+  .folderTitle h1 {
+    font-size: 0.8rem;
+  }
+
+  .folderSection h2 {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+  }
+
+  .features {
+    font-size: 10px;
+    padding: 20px 0 0 18px;
+  }
+
+  .folderLinks {
+    text-align: left;
+    line-height: normal;
+  }
+
+  .projectLinks {
+    font-size: 10px;
   }
 
   #webDev_articles {
@@ -493,6 +593,10 @@ footer li {
     width: 20px;
   }
 
+  .title h1 {
+    padding: 10px 0 0 0;
+  }
+
   .title h2 {
     font-size: 0.5rem;
     font-weight: 400;
@@ -501,6 +605,44 @@ footer li {
   .docsource img {
      height: 30px;
      width: 30px;
+  }
+
+  .folderDiv {
+    width: 75vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .folderTitle {
+    height: 40px;
+    padding: 7px 0 0 0;
+  }
+
+  .folderTitle h1 {
+    font-size: 0.8rem;
+  }
+
+  .folderSection h2 {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+  }
+
+  .features {
+    font-size: 10px;
+    padding: 5px 0 0 15px;
+  }
+
+  .folderLinks {
+    text-align: left;
+    line-height: normal;
+  }
+
+  .projectLinks {
+    font-size: 10px;
+  }
+
+  .sidebar {
+    padding: 40px 0 0 0;
   }
 
 }

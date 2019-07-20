@@ -1,5 +1,5 @@
 import Frame from '../frame/Frame';
-import Carousel from 'nuka-carousel';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 const Personal = props => (
@@ -13,14 +13,31 @@ const Personal = props => (
       </div>
 
        <section className="folderSection">
-        <h2 className="folderProjectTitle"
-            style={{color: 'hsl(324, 7%, 14%)'}}
-        ></h2>
+        <h2 className="folderProjectTitle" style={{color: 'hsl(324, 7%, 14%)'}}>
+          Issue Tracker
+        </h2>
         <ul className="features">
           <li></li>
         </ul>
-        <Carousel className="folderCarousel" cellAlign="center" height="80vh" width="70vw">
-          <img src="" />
+        <Carousel className="folderCarousel">
+          <Carousel.Item>
+            <img src="" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="" />
+          </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
           <a href="https://learn.freecodecamp.org" target="_blank">

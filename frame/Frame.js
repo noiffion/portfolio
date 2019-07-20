@@ -17,14 +17,14 @@ const Frame = props => {
   }
 
   return (
-    <div>
+    <>
       <Header />
       <main>
         <Sidebar mouseOver={mouseOver} mouseOut={mouseOut} />
         {props.children}
       </main>
       <Footer />
-    </div>  
+    </>
   );
 }
 

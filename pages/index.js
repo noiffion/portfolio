@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Frame from '../frame/Frame';
 import projectList from '../elements/projectList';
-import Articles from '../elements/Articles'
+import Articles from '../elements/Articles';
 
 
 const ProjectFolder = props => (
@@ -19,9 +19,13 @@ const ProjectFolder = props => (
 
 const Index = props => {
   const folders = projectList.map((project, index) => (
-    <ProjectFolder key={index + '_' + project.title} cls={project.cls} title={project.title} 
-                 color={project.color} imgSrc={project.imgSrc} description={project.description} 
-                 alt={project.alt} 
+    <ProjectFolder 
+      key={index + '_' + project.title}
+      title={project.title}
+      color={project.color}
+      imgSrc={project.imgSrc}
+      description={project.description}
+      alt={project.alt}
     />
   ));
 
