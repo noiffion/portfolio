@@ -180,6 +180,11 @@ article a:hover {
   padding: 0% 15% 8% 5%;
 }
 
+.linkDiv {
+  cursor: pointer;
+  padding: 40px 0 0 0;
+}
+
 .projectFolder h2 {
   font-size: 2rem;
 }
@@ -189,7 +194,7 @@ article a:hover {
 
 .infosources {
   /*border: 1px solid black;*/
-  margin: 20% 0 0 0;
+  margin: 5% 0 0 0;
   border-top: 1px solid darkgray;
   font-family: "Work Sans";
 }

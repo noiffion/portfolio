@@ -5,8 +5,8 @@ import Articles from '../elements/Articles';
 
 
 const listMaker = list => {
-  const lis = list.map(element => {
-    return (<li> {element} </li>)
+  const lis = list.map((element, index) => {
+    return (<li key={index+'_'+element}> {element} </li>)
   })
   return lis;
 }
@@ -15,10 +15,10 @@ const listMaker = list => {
 const ProjectFolder = props => (
   <article className="projectFolder">
     <Link href={`/folders?title=${props.title}`}>
-      <a href={props.title}>
+      <div className="linkDiv">
         <h2 style={{color: props.color}}>{props.title}</h2>
         <img alt={props.alt} src={props.imgSrc} />
-      </a>
+      </div>
     </Link>
     <p> {props.description} </p>
     <ul>
@@ -38,6 +38,7 @@ const Index = props => {
       key={index + '_' + project.title}
       title={project.title}
       color={project.color}
+      colHov={project.colHov}
       imgSrc={project.imgSrc}
       description={project.description}
       list={project.list}

@@ -14,7 +14,8 @@ const projectList = [
    link: 'https://learn.freecodecamp.org/',
    alt: 'freeCodeCamp logo',
    imgSrc: './static/freeCodeCamp.png',
-   color: 'hsl(120, 33%, 42%)'
+   color: 'hsl(120, 33%, 42%)',
+   colHov: 'hsl(120, 53%, 42%)'
   },
   {
    title: 'Codecademy',
@@ -31,7 +32,8 @@ const projectList = [
    link: 'https://www.codecademy.com/learn/paths/web-development',
    alt: 'Codecademy logo',
    imgSrc: './static/codecademy.jpeg',
-   color: 'hsl(202, 21%, 32%)'
+   color: 'hsl(202, 21%, 32%)',
+   colHov: 'hsl(202, 41%, 32%)'
   },
   {
    title: 'Udacity',
@@ -48,7 +50,8 @@ const projectList = [
    link: 'https://eu.udacity.com/course/full-stack-web-developer-nanodegree--nd004',
    alt: 'Udacity logo',
    imgSrc: './static/udacity.png',
-   color: 'hsl(194, 88%, 47%'
+   color: 'hsl(194, 88%, 47%)',
+   colHov: 'hsl(194, 68%, 47%)'
   },
   {
    title: 'Personal',
@@ -67,9 +70,9 @@ const projectList = [
    link: '',
    alt: 'Personal projects picture',
    imgSrc: './static/personal.png',
-   color: 'hsl(324, 7%, 14%)'
+   color: 'hsl(324, 7%, 14%)',
+   colHov: 'hsl(324, 27%, 14%)'
   },
-
 ];
 
 

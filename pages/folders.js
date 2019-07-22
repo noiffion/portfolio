@@ -1,12 +1,13 @@
-import { withRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import Udacity from '../elements/Udacity';
 import Codecademy from '../elements/Codecademy';
 import FreeCodeCamp from '../elements/FreeCodeCamp';
 import Personal from '../elements/Personal';
 
-const Folders = withRouter(props => {
+const Folders = props => {
 
-    const title = props.router.query.title;
+    const router = useRouter(); 
+    const title = router.query.title;
     let folder = null;
 
     switch (title) {
@@ -27,7 +28,7 @@ const Folders = withRouter(props => {
         {folder}
       </>
     )
-  }
-);
+};
+
 
 export default Folders;
