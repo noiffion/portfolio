@@ -4,6 +4,14 @@ import projectList from '../elements/projectList';
 import Articles from '../elements/Articles';
 
 
+const listMaker = list => {
+  const lis = list.map(element => {
+    return (<li> {element} </li>)
+  })
+  return lis;
+}
+
+
 const ProjectFolder = props => (
   <article className="projectFolder">
     <Link href={`/folders?title=${props.title}`}>
@@ -13,6 +21,13 @@ const ProjectFolder = props => (
       </a>
     </Link>
     <p> {props.description} </p>
+    <ul>
+        {listMaker(props.list)}
+    </ul>
+    {props.title !== 'Personal' ? 
+      (<a href={props.link} style={{color: props.color}}target="_blank"> 
+        {props.title} curriculum 
+       </a>) : null}
   </article>
 );
 
@@ -25,6 +40,8 @@ const Index = props => {
       color={project.color}
       imgSrc={project.imgSrc}
       description={project.description}
+      list={project.list}
+      link={project.link}
       alt={project.alt}
     />
   ));

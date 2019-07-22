@@ -160,7 +160,6 @@ article {
 }
 
 article h2 {
-  font-size: 1.25rem;
   font-weight: 300;
   padding-left: 5%;
 }
@@ -179,6 +178,10 @@ article a:hover {
 .projectFolder {
   /*border: 1px solid gray;*/
   padding: 0% 15% 8% 5%;
+}
+
+.projectFolder h2 {
+  font-size: 2rem;
 }
 
 
@@ -416,12 +419,8 @@ footer li {
     width: 40px;
   }
 
-  article h2 {
-    font-size: 14px;
-  }
-
-  article p {
-    font-size: 12px;
+  .projectFolder h2 {
+    font-size: 1.5rem;
   }
 
   #webDev_articles {
@@ -504,6 +503,22 @@ footer li {
     font-size: 0.5rem;
   }
 
+  .projectFolder {
+    margin: 5% 0 0 0;
+  }
+
+  .projectFolder p {
+    font-size: 0.8rem;
+  }
+
+  .projectFolder ul {
+    font-size: 0.8rem;
+  }
+
+  .projectFolder {
+    font-size: 0.8rem;
+  } 
+
 }
 
 /* A new grid format (two columns instead of three) is defined for width under 520px */
@@ -536,6 +551,10 @@ footer li {
 
   .projectGrid {
     padding: 5% 0 0 0;
+  }
+
+  .projectFolder h2 {
+    font-size: 1.2rem;
   }
 
   .folderDiv {
@@ -613,6 +632,10 @@ footer li {
      width: 30px;
   }
 
+  .projectFolder h2 {
+    font-size: 1.1rem;
+  }
+
   .folderDiv {
     width: 75vw;
     margin: 0;
@@ -650,5 +673,17 @@ footer li {
   .sidebar {
     padding: 40px 0 0 0;
   }
+
+  .projectFolder p {
+    font-size: 0.7rem;
+  }
+
+  .projectFolder ul {
+    font-size: 0.7rem;
+  }
+
+  .projectFolder {
+    font-size: 0.7rem;
+  } 
 
 }
