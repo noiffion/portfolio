@@ -189,6 +189,10 @@ article a:hover {
   font-size: 2rem;
 }
 
+.folderImg {
+  margin: 0 0 2% 5%;
+}
+
 
 /* The three articles in the .infosources <section> tag */
 
@@ -387,6 +391,8 @@ footer li {
   }
   
   .title_shrunk {
+    position: relative;
+    top: 5px;
     font-size: 0.8rem;
   }
   
@@ -534,6 +540,11 @@ footer li {
     margin-top: -2%;
   }
 
+  .infosources {
+    position: relative;
+    right: 10%;
+  }
+
   .gallery {
     flex-direction: column;
   }
@@ -550,12 +561,23 @@ footer li {
   }
   
   .title_shrunk {
+    position: relative;
+    top: 4px;
     font-size: 0.6rem;
-    padding: 12px 0 3px 0;
   }
 
   .projectGrid {
-    padding: 5% 0 0 0;
+    /*border: 1px solid black;*/
+  }
+
+  .projectFolder {
+    /*border: 1px solid purple;*/
+    margin-top: 0;
+  }
+
+  .projectFolder ul {
+    /*border: 1px solid goldenrod;*/
+    padding-left: 10%;
   }
 
   .projectFolder h2 {

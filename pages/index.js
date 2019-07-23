@@ -17,7 +17,7 @@ const ProjectFolder = props => (
     <Link href={`/folders?title=${props.title}`}>
       <div className="linkDiv">
         <h2 style={{color: props.color}}>{props.title}</h2>
-        <img alt={props.alt} src={props.imgSrc} />
+        <img className="folderImg" alt={props.alt} src={props.imgSrc} />
       </div>
     </Link>
     <p> {props.description} </p>

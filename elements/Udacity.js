@@ -34,8 +34,8 @@ const Udacity = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://codepen.io/noiffion/project/full/XzobLE" target="_blank">
-            <span className="projectLinks"> Demo @ CodePen </span>
+          <a href="https://angkor-wat.glitch.me" target="_blank">
+            <span className="projectLinks"> Demo @ Glitch </span>
           </a>
           <br />
           <a href="https://github.com/noiffion/angkor" target="_blank">
