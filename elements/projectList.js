@@ -56,8 +56,8 @@ const projectList = [
   {
    title: 'Personal',
    description: 
-     `One full-stack Issue tracker project
-     (based on Subramanian: ProMERN book, but significantly modified):`,
+     `Two React projects: Issue tracker (based on Subramanian: ProMERN book, 
+      but significantly modified), and a Sorting algorithm comparison page built with Next.js`,
    list: [
      'React',
      'Express',
@@ -66,6 +66,7 @@ const projectList = [
      'Webpack',
      'Babel',
      'Passport',
+     'Next',
    ],
    link: '',
    alt: 'Personal projects picture',

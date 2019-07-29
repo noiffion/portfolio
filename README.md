@@ -1,2 +1,2 @@
-# portfolio
-Web projects
+# Portfolio
+Portfolio of Web projects

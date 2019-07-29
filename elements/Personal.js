@@ -1,7 +1,7 @@
-import React from 'react';
+import React     from 'react';
 import PropTypes from 'prop-types';
-import Frame from '../frame/Frame';
-import Carousel from 'react-bootstrap/Carousel';
+import Frame     from '../frame/Frame';
+import Carousel  from 'react-bootstrap/Carousel';
 
 
 const Personal = props => (
@@ -52,6 +52,45 @@ const Personal = props => (
           <a href="https://noiffion-issue-tracker.glitch.me/" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Issue Tracker</span>
           </a> @ Glitch
+        </div>
+      </section>
+
+
+       <section className="folderSection">
+        <h2 className="folderProjectTitle" style={{color: 'hsl(324, 7%, 14%)'}}>
+          Sorters
+        </h2>
+        <ul className="features">
+          <li>Next.js</li>
+          <li>Webworkers</li>
+          <li>Styled components</li>
+          <li>React VirtualList</li>
+          <li>Eslint + Jest</li>
+        </ul>
+        <Carousel className="folderCarousel">
+          <Carousel.Item>
+            <img src="./static/Sorter_0.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Sorter_1.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Sorter_2.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Sorter_3.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Sorter_4.png" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="./static/Sorter_5.png" />
+          </Carousel.Item>
+        </Carousel>
+        <div className="folderLinks">
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <span className="projectLinks">Sorters</span>
+          </a>
         </div>
       </section>
 
