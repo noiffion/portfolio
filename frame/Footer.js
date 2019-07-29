@@ -1,9 +1,15 @@
+import React from 'react';
 
-const Footer = props => (
+
+const Footer = () => (
   <footer>
     <nav>
       <ul>
-        <li><a href="https://github.com/noiffion/portfolio" target="_blank">Github</a></li>
+        <li>
+          <a href="https://github.com/noiffion/portfolio" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
+        </li>
       </ul>
     </nav>
     <div className="copyright">

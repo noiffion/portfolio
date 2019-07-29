@@ -1,4 +1,4 @@
-
+/* eslint-disable */
 function scrollFunction() {
   const tesseract = document.getElementById("tesseract_img");
   const webProj = document.getElementById("webProj");

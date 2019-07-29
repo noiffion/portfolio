@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
@@ -26,6 +27,11 @@ const Frame = props => {
       <Footer />
     </>
   );
+}
+
+
+Frame.propTypes = {
+  children: PropTypes.node.isRequired, 
 }
 
 

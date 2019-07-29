@@ -1,6 +1,8 @@
+
+import React from 'react';
+import PropTypes from 'prop-types';
 import Carousel from 'react-bootstrap/Carousel';
 import Frame from '../frame/Frame';
-import Footer from '../frame/Footer';
 
 
 const Udacity = props => (
@@ -34,11 +36,11 @@ const Udacity = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://angkor-wat.glitch.me" target="_blank">
+          <a href="https://angkor-wat.glitch.me" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Demo @ Glitch </span>
           </a>
           <br />
-          <a href="https://github.com/noiffion/angkor" target="_blank">
+          <a href="https://github.com/noiffion/angkor" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Source @ GitHub </span>
           </a>
         </div>
@@ -74,7 +76,7 @@ const Udacity = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://github.com/noiffion/newsDB" target="_blank"> 
+          <a href="https://github.com/noiffion/newsDB" target="_blank" rel="noopener noreferrer"> 
             <span className="projectLinks"> Source @ GitHub </span> 
           </a>
         </div> 
@@ -112,11 +114,11 @@ const Udacity = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://github.com/noiffion/hamnet" target="_blank">
+          <a href="https://github.com/noiffion/hamnet" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Source @ GitHub </span> 
           </a>
           <br />
-          <a href="https://noiffion.pythonanywhere.com/" target="_blank">
+          <a href="https://noiffion.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Demo @ Pythonanywhere </span>
           </a>
         </div>
@@ -125,6 +127,11 @@ const Udacity = props => (
     </div>
   </Frame>
 )
+
+
+Udacity.propTypes = {
+  title: PropTypes.string.isRequired, 
+}
 
 
 export default Udacity;

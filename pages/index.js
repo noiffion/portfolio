@@ -1,7 +1,9 @@
-import Link from 'next/link';
-import Frame from '../frame/Frame';
+import React       from 'react';
+import PropTypes   from 'prop-types';
+import Link        from 'next/link';
+import Frame       from '../frame/Frame';
 import projectList from '../elements/projectList';
-import Articles from '../elements/Articles';
+import Articles    from '../elements/Articles';
 
 
 const listMaker = list => {
@@ -25,20 +27,19 @@ const ProjectFolder = props => (
         {listMaker(props.list)}
     </ul>
     {props.title !== 'Personal' ? 
-      (<a href={props.link} style={{color: props.color}}target="_blank"> 
+      (<a href={props.link} style={{color: props.color}}target="_blank" rel="noopener noreferrer"> 
         {props.title} curriculum 
        </a>) : null}
   </article>
 );
 
 
-const Index = props => {
+const Index = () => {
   const folders = projectList.map((project, index) => (
     <ProjectFolder 
       key={index + '_' + project.title}
       title={project.title}
       color={project.color}
-      colHov={project.colHov}
       imgSrc={project.imgSrc}
       description={project.description}
       list={project.list}
@@ -56,6 +57,17 @@ const Index = props => {
       </div>
     </Frame>
   );
+}
+
+
+ProjectFolder.propTypes = {
+  title: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  list: PropTypes.array.isRequired,
+  link: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
 }
 
 

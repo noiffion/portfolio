@@ -1,5 +1,7 @@
-import Frame from '../frame/Frame';
-import Carousel from 'react-bootstrap/Carousel';
+import React     from 'react';
+import Frame     from '../frame/Frame';
+import PropTypes from 'prop-types';
+import Carousel  from 'react-bootstrap/Carousel';
 
 
 const Codecademy = props => (
@@ -55,16 +57,16 @@ const Codecademy = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://codepen.io/noiffion/full/KjvydV" target="_blank">
+          <a href="https://codepen.io/noiffion/full/KjvydV" target="_blank" rel="noopener noreferrer">
              <span style={{color: 'hsl(0, 0%, 70%)'}}>&#91;</span>
              <span className="projectLinks">Savory</span>
              <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://codepen.io/noiffion/full/ZdJaqa" target="_blank">
+          <a href="https://codepen.io/noiffion/full/ZdJaqa" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">House Store</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://codepen.io/noiffion/full/NZvXWp" target="_blank">
+          <a href="https://codepen.io/noiffion/full/NZvXWp" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Tsunami coffee</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}</span>
           </a>@ Codepen
@@ -91,7 +93,7 @@ const Codecademy = props => (
           </Carousel.Item>  
         </Carousel>
         <div className="folderLinks">
-          <a href="https://codepen.io/noiffion/full/LKjemE" target="_blank"> 
+          <a href="https://codepen.io/noiffion/full/LKjemE" target="_blank" rel="noopener noreferrer"> 
             <span className="projectLinks"> Demo @ CodePen </span> 
           </a>
         </div> 
@@ -110,7 +112,7 @@ const Codecademy = props => (
           <img src="./static/Shoes_1.png" />
         </Carousel>
         <div className="folderLinks">
-          <a href="https://shoes-noiffion.glitch.me/" target="_blank">
+          <a href="https://shoes-noiffion.glitch.me/" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Demo @ Glitch </span> 
           </a>
         </div>
@@ -139,10 +141,10 @@ const Codecademy = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://wanderlust-noiffion.glitch.me/" target="_blank">
+          <a href="https://wanderlust-noiffion.glitch.me/" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Demo @ Glitch </span> 
           </a><br/>
-          <a href="https://github.com/noiffion/Wanderlust" target="_blank">
+          <a href="https://github.com/noiffion/Wanderlust" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Source @ GitHub </span> 
           </a><br/>
         </div>
@@ -164,7 +166,7 @@ const Codecademy = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://codesandbox.io/s/quizzical-joliot-iy6mx" target="_blank">
+          <a href="https://codesandbox.io/s/quizzical-joliot-iy6mx" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Demo @ CodeSandbox </span> 
           </a><br/>
         </div>
@@ -173,6 +175,11 @@ const Codecademy = props => (
     </div>
   </Frame>
 )
+
+
+Codecademy.propTypes = {
+  title: PropTypes.string.isRequired, 
+}
 
 
 export default Codecademy;

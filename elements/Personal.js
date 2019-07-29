@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import Frame from '../frame/Frame';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -47,7 +49,7 @@ const Personal = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://noiffion-issue-tracker.glitch.me/" target="_blank">
+          <a href="https://noiffion-issue-tracker.glitch.me/" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Issue Tracker</span>
           </a> @ Glitch
         </div>
@@ -56,6 +58,11 @@ const Personal = props => (
     </div> 
   </Frame>
 )
+
+
+Personal.propTypes = {
+  title: PropTypes.string.isRequired, 
+}
 
 
 export default Personal;

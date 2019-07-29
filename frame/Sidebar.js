@@ -1,10 +1,11 @@
-import Link from 'next/link';
+import React from 'react';
+import PropTypes from 'prop-types';
 import sidebarIcons from './sidebarIcons';
 
 
 const Icon = props => (
   <div className="docsource">
-    <a href={props.url} target="_blank">
+    <a href={props.url} target="_blank" rel="noopener noreferrer">
       <img alt={props.name} src={props.path} data-normal={props.path} data-focused={props.focused}
         onMouseOver={props.mouseOver} onMouseOut={props.mouseOut} />
     </a>
@@ -25,6 +26,21 @@ const Sidebar = props => {
     </aside>
   )
 };
+
+
+Icon.propTypes = {
+  url: PropTypes.string.isRequired, 
+  name: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
+  focused: PropTypes.bool.isRequired,
+  mouseOut: PropTypes.bool.isRequired,
+  mouseOver: PropTypes.bool.isRequired, 
+}
+
+Sidebar.propTypes = {
+  mouseOut: PropTypes.bool.isRequired,
+  mouseOver: PropTypes.bool.isRequired, 
+}
 
 
 export default Sidebar;

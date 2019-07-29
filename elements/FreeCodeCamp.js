@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import Carousel from 'react-bootstrap/Carousel';
 import Frame from '../frame/Frame';
 
@@ -42,7 +44,7 @@ const FreeCodeCamp = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://learn.freecodecamp.org" target="_blank">
+          <a href="https://learn.freecodecamp.org" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Infos @ freeCodeCamp</span> 
           </a>
         </div>
@@ -77,7 +79,7 @@ const FreeCodeCamp = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://learn.freecodecamp.org" target="_blank">
+          <a href="https://learn.freecodecamp.org" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Infos @ freeCodeCamp </span>
           </a>
         </div>
@@ -113,24 +115,24 @@ const FreeCodeCamp = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://codepen.io/noiffion/pen/gJKWYm" target="_blank">
+          <a href="https://codepen.io/noiffion/pen/gJKWYm" target="_blank" rel="noopener noreferrer">
              <span style={{color: 'hsl(0, 0%, 70%)'}}>&#91;</span>
              <span className="projectLinks">Quotes</span>
              <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://codepen.io/noiffion/pen/mYKXOm" target="_blank">
+          <a href="https://codepen.io/noiffion/pen/mYKXOm" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Markdown</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://codepen.io/noiffion/pen/EzpKBP" target="_blank">
+          <a href="https://codepen.io/noiffion/pen/EzpKBP" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Drums</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://codepen.io/noiffion/pen/dEjERo" target="_blank">
+          <a href="https://codepen.io/noiffion/pen/dEjERo" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Calculator</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://codepen.io/noiffion/pen/qGMdpB" target="_blank">
+          <a href="https://codepen.io/noiffion/pen/qGMdpB" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Pomodoro</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}</span>
           </a>@ Codepen
@@ -165,24 +167,24 @@ const FreeCodeCamp = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://glitch.com/edit/#!/freecodecamp-api-1?path=server.js:1:0" target="_blank">
+          <a href="https://glitch.com/edit/#!/freecodecamp-api-1?path=server.js:1:0" target="_blank" rel="noopener noreferrer">
              <span style={{color: 'hsl(0, 0%, 70%)'}}>&#91;</span>
              <span className="projectLinks">Timestamp</span>
              <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://glitch.com/edit/#!/freecodecamp-api-2?path=server.js:3:0" target="_blank">
+          <a href="https://glitch.com/edit/#!/freecodecamp-api-2?path=server.js:3:0" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Header&nbsp;Parser</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://glitch.com/edit/#!/freecodecamp-api-3?path=server.js:3:33" target="_blank">
+          <a href="https://glitch.com/edit/#!/freecodecamp-api-3?path=server.js:3:33" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">URL&nbsp;Shortener</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://glitch.com/edit/#!/freecodecamp-api-4?path=server.js:1:0" target="_blank">
+          <a href="https://glitch.com/edit/#!/freecodecamp-api-4?path=server.js:1:0" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Exercise&nbsp;tracker</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://glitch.com/edit/#!/freecodecamp-api-5?path=server.js:1:0" target="_blank">
+          <a href="https://glitch.com/edit/#!/freecodecamp-api-5?path=server.js:1:0" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">File&nbsp;Metadata</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}</span>
           </a>@ Glitch 
@@ -219,24 +221,24 @@ const FreeCodeCamp = props => (
           </Carousel.Item>
         </Carousel>
         <div className="folderLinks">
-          <a href="https://glitch.com/edit/#!/infosec-qualit-assurance-project1?path=server.js:1:0" target="_blank">
+          <a href="https://glitch.com/edit/#!/infosec-qualit-assurance-project1?path=server.js:1:0" target="_blank" rel="noopener noreferrer">
              <span style={{color: 'hsl(0, 0%, 70%)'}}>&#91;</span>
              <span className="projectLinks">Converter</span>
              <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://glitch.com/edit/#!/fcc-isqa-4?path=server.js:1:0" target="_blank">
+          <a href="https://glitch.com/edit/#!/fcc-isqa-4?path=server.js:1:0" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Issues</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://glitch.com/edit/#!/fcc-isqa-iii?path=server.js:1:0" target="_blank">
+          <a href="https://glitch.com/edit/#!/fcc-isqa-iii?path=server.js:1:0" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Library</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://glitch.com/edit/#!/fcc-isqa-iv?path=server.js:1:0" target="_blank">
+          <a href="https://glitch.com/edit/#!/fcc-isqa-iv?path=server.js:1:0" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Nasdaq</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>,{' '}</span>
           </a>
-          <a href="https://glitch.com/edit/#!/fcc-isqa-v?path=server.js:1:0" target="_blank">
+          <a href="https://glitch.com/edit/#!/fcc-isqa-v?path=server.js:1:0" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Message&nbsp;Board</span>
             <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}</span>
           </a>@ Glitch 
@@ -246,6 +248,11 @@ const FreeCodeCamp = props => (
     </div>
   </Frame>
 )
+
+
+FreeCodeCamp.propTypes = {
+  title: PropTypes.string.isRequired, 
+}
 
 
 export default FreeCodeCamp;

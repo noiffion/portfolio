@@ -1,10 +1,11 @@
+import React         from 'react';
 import { useRouter } from 'next/router';
-import Udacity from '../elements/Udacity';
-import Codecademy from '../elements/Codecademy';
-import FreeCodeCamp from '../elements/FreeCodeCamp';
-import Personal from '../elements/Personal';
+import Udacity       from '../elements/Udacity';
+import Codecademy    from '../elements/Codecademy';
+import FreeCodeCamp  from '../elements/FreeCodeCamp';
+import Personal      from '../elements/Personal';
 
-const Folders = props => {
+const Folders = () => {
 
     const router = useRouter(); 
     const title = router.query.title;
