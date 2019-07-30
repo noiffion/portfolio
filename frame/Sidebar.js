@@ -32,14 +32,14 @@ Icon.propTypes = {
   url: PropTypes.string.isRequired, 
   name: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
-  focused: PropTypes.bool.isRequired,
-  mouseOut: PropTypes.bool.isRequired,
-  mouseOver: PropTypes.bool.isRequired, 
+  focused: PropTypes.string.isRequired,
+  mouseOut: PropTypes.func.isRequired,
+  mouseOver: PropTypes.func.isRequired, 
 }
 
 Sidebar.propTypes = {
-  mouseOut: PropTypes.bool.isRequired,
-  mouseOver: PropTypes.bool.isRequired, 
+  mouseOut: PropTypes.func.isRequired,
+  mouseOver: PropTypes.func.isRequired, 
 }
 
 
