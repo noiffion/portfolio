@@ -90,7 +90,7 @@ const Personal = props => (
         <div className="folderLinks">
           <a href="https://blooming-waters-25635.herokuapp.com/" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Sorters</span>
-          </a>
+          </a> @ Heroku
         </div>
       </section>
 
