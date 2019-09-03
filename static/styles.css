@@ -164,15 +164,15 @@ article h2 {
   padding-left: 5%;
 }
 
-article img {
-  float: right;
-  height: 80px;
-  width: 80px;
+.techStack {
+  width: 70%;
 }
 
-
-article a:hover {
-  text-decoration: underline;
+.techStack img {
+  float: right;
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
 }
 
 .projectFolder {

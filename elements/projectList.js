@@ -1,28 +1,89 @@
 const projectList = [
-  {   
-   title: 'freeCodeCamp',
-   description: 
-     `Five modules have been completed - approximately 
-      300 hours to finish each one of them:`,
+  {
+   title: 'Issue Tracker',
+   description:
+     `An Issue tracker application (based on Subramanian: ProMERN book,
+      but significantly modified).`,
+   usedStack: 'Used technology stack in the project: ',
    list: [
-     'Responsive Web Design', 
-     'JavaScript Algorithms And Data Structures', 
-     'Front End Libraries', 
-     'APIs and Microservices', 
+     'React',
+     'React bootstrap',
+     'Express',
+     'Node',
+     'MongoDB',
+     'Webpack',
+     'Babel',
+     'Passport',
+     'Eslint'
+   ],
+   link: '',
+   alt: 'Issue Tracker logo',
+   imgSrc: './static/Itracker_icon.png',
+   color: 'hsl(219, 18%, 51%)',
+   colHov: 'hsl(219, 38%, 51%)',
+   displayCurriculum: false,
+  },
+  {
+   title: 'Sorter efficiency',
+   description:
+      'Sorting algorithm comparison page built with Next.js.',
+   usedStack: 'Used technology stack in the project: ',
+   list: [
+     'React',
+     'React bootstrap',
+     'Next',
+     'Webworkers',
+     'React tiny virtual list',
+     'Styled components',
+     'Jest',
+     'Eslint',
+   ],
+   link: '',
+   alt: 'Sorting logo',
+   imgSrc: './static/generic-sorting.png',
+   color: 'hsl(38, 98%, 52%)',
+   colHov: 'hsl(324, 27%, 14%)',
+   displayCurriculum: false,
+  },
+  {
+   title: 'Completed codeschool curriculums & projects',
+   description: null,
+   usedStack: null,
+   list: [],
+   link: null,
+   alt: null,
+   imgSrc: null,
+   color: null,
+   colHov: null,
+   displayCurriculum: null,
+  },
+  {
+   title: 'freeCodeCamp',
+   description:
+     `Five modules have been completed - approximately
+      300 hours to finish each one of them:`,
+   usedStack: 'Studied technology stack in the course: ',
+   list: [
+     'Responsive Web Design',
+     'JavaScript Algorithms And Data Structures',
+     'Front End Libraries',
+     'APIs and Microservices',
      'Information Security and Quality Assurance',
    ],
    link: 'https://learn.freecodecamp.org/',
    alt: 'freeCodeCamp logo',
    imgSrc: './static/freeCodeCamp.png',
    color: 'hsl(120, 33%, 42%)',
-   colHov: 'hsl(120, 53%, 42%)'
+   colHov: 'hsl(120, 53%, 42%)',
+   displayCurriculum: true,
   },
   {
    title: 'Codecademy',
    description: 'Web development course - takes about 30 weeks to finish it:',
+   usedStack: 'Studied technology stack in the course: ',
    list: [
-     'HTML & Website styling', 
-     'Interactive JavaScript websites', 
+     'HTML & Website styling',
+     'Interactive JavaScript websites',
      'CLI & Git',
      'React',
      'Express',
@@ -33,16 +94,18 @@ const projectList = [
    alt: 'Codecademy logo',
    imgSrc: './static/codecademy.jpeg',
    color: 'hsl(202, 21%, 32%)',
-   colHov: 'hsl(202, 41%, 32%)'
+   colHov: 'hsl(202, 41%, 32%)',
+   displayCurriculum: true,
   },
   {
    title: 'Udacity',
    description: 'Full Stack Web Developer nanodegree program - 4 months long:',
+   usedStack: 'Studied technology stack in the course: ',
    list: [
      'Unix shell / GitHub',
      'HTTP protocol, request/response cycle',
      'Python',
-     'Flask',  
+     'Flask',
      'PostgreSQL',
      'Authorization / authentication',
      'Deploying Linux servers on Amazon Lightsail',
@@ -51,28 +114,8 @@ const projectList = [
    alt: 'Udacity logo',
    imgSrc: './static/udacity.png',
    color: 'hsl(194, 88%, 47%)',
-   colHov: 'hsl(194, 68%, 47%)'
-  },
-  {
-   title: 'Personal',
-   description: 
-     `Two React projects: Issue tracker (based on Subramanian: ProMERN book, 
-      but significantly modified), and a Sorting algorithm comparison page built with Next.js`,
-   list: [
-     'React',
-     'Express',
-     'Node',
-     'MongoDB',
-     'Webpack',
-     'Babel',
-     'Passport',
-     'Next',
-   ],
-   link: '',
-   alt: 'Personal projects picture',
-   imgSrc: './static/personal.png',
-   color: 'hsl(324, 7%, 14%)',
-   colHov: 'hsl(324, 27%, 14%)'
+   colHov: 'hsl(194, 68%, 47%)',
+   displayCurriculum: true,
   },
 ];
 
