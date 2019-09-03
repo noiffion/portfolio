@@ -17,7 +17,7 @@ const IssueTracker = () => (
            background: 'linear-gradient(45deg, hsl(219, 18%, 51%), hsl(219, 28%, 51%))',
            fontFamily: 'Work Sans'}}
       >
-        <h1>IssueTracker</h1>
+        <h1>Issue Tracker</h1>
       </div>
 
        <section className="folderSection">
