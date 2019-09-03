@@ -6,12 +6,13 @@ import Frame     from '../frame/Frame';
 
 const FreeCodeCamp = props => (
   <Frame>
-    <div className="folderDiv">
+    <div className="folderDiv manjari">
       <div className="folderTitle" 
            style={{color: 'hsl(0, 100%, 99%)', 
-           background: 'linear-gradient(45deg, hsl(120, 33%, 45%), hsl(120, 33%, 37%))'}}
+           background: 'linear-gradient(45deg, hsl(120, 33%, 45%), hsl(120, 33%, 37%))',
+           fontFamily: 'Work Sans'}}
       >
-        <h1 > {props.title} projects </h1>
+        <h1>freeCodeCamp projects</h1>
       </div>
 
        <section className="folderSection">
@@ -248,11 +249,6 @@ const FreeCodeCamp = props => (
     </div>
   </Frame>
 )
-
-
-FreeCodeCamp.propTypes = {
-  title: PropTypes.string.isRequired, 
-}
 
 
 export default FreeCodeCamp;

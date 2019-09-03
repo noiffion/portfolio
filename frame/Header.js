@@ -18,6 +18,7 @@ const Header = () => (
       <link rel="stylesheet" type="text/css" href="./static/styles.css" />
       <link rel="shortcut icon" href="./static/favicon.ico" />
       <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
       {/* <script defer src="./static/helper.js"></script> */}
     </Head>
 

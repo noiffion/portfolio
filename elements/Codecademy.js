@@ -6,19 +6,20 @@ import Carousel  from 'react-bootstrap/Carousel';
 
 const Codecademy = props => (
   <Frame>
-    <div className="folderDiv">
+    <div className="folderDiv manjari">
       <div className="folderTitle" 
            style={{color: 'hsl(0, 100%, 99%)', 
-           background: 'linear-gradient(45deg, hsl(202, 21%, 35%), hsl(202, 21%, 29%))'}}
+           background: 'linear-gradient(45deg, hsl(202, 21%, 35%), hsl(202, 21%, 29%))',
+           fontFamily: 'Work Sans'}}
       >
-        <h1 > {props.title} projects </h1>
+        <h1>Codecademy projects</h1>
       </div>
 
       <section className="folderSection">
         <h2 className="folderProjectTitle" style={{color: 'hsl(202, 21%, 32%)'}}>
           Savory &  House Store & Tsunami coffee
         </h2>
-        <ul className="features">
+        <ul className="features manjari">
           <li>plain HTML & CSS</li> 
         </ul>
         <Carousel className="folderCarousel"> 
@@ -56,7 +57,7 @@ const Codecademy = props => (
             <img src="./static/Coffee_2.png" />
           </Carousel.Item>
         </Carousel>
-        <div className="folderLinks">
+        <div className="folderLinks manjari">
           <a href="https://codepen.io/noiffion/full/KjvydV" target="_blank" rel="noopener noreferrer">
              <span style={{color: 'hsl(0, 0%, 70%)'}}>&#91;</span>
              <span className="projectLinks">Savory</span>
@@ -78,7 +79,7 @@ const Codecademy = props => (
         <h2 className="folderProjectTitle" style={{color: 'hsl(202, 21%, 32%)'}}> 
           Chore Door
         </h2>
-        <ul className="features">
+        <ul className="features manjari">
           <li>HTML + CSS + JS</li> 
         </ul>
         <Carousel className="folderCarousel"> 
@@ -92,7 +93,7 @@ const Codecademy = props => (
             <img src="./static/Chore_2.png" />
           </Carousel.Item>  
         </Carousel>
-        <div className="folderLinks">
+        <div className="folderLinks manjari">
           <a href="https://codepen.io/noiffion/full/LKjemE" target="_blank" rel="noopener noreferrer"> 
             <span className="projectLinks"> Demo @ CodePen </span> 
           </a>
@@ -103,7 +104,7 @@ const Codecademy = props => (
         <h2 className="folderProjectTitle"
             style={{color: 'hsl(202, 21%, 32%)'}}
         >Shoes</h2>
-        <ul className="features">
+        <ul className="features manjari">
           <li>HTML + CSS</li> 
           <li>jQuery</li> 
         </ul>
@@ -111,7 +112,7 @@ const Codecademy = props => (
           <img src="./static/Shoes_0.png" />
           <img src="./static/Shoes_1.png" />
         </Carousel>
-        <div className="folderLinks">
+        <div className="folderLinks manjari">
           <a href="https://shoes-noiffion.glitch.me/" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Demo @ Glitch </span> 
           </a>
@@ -119,10 +120,12 @@ const Codecademy = props => (
       </section> 
 
       <section className="folderSection">
-        <h2 className="folderProjectTitle" style={{color: 'hsl(202, 21%, 32%)'}}>
-          Wanderlust
-        </h2>
-        <ul className="features">
+        <a href="https://wanderlust-noiffion.glitch.me/" target="_blank" rel="noopener noreferrer">
+          <h2 className="folderProjectTitle" style={{color: 'hsl(202, 21%, 32%)'}}>
+            Wanderlust
+          </h2>
+        </a>
+        <ul className="features manjari">
           <li>vanilla JS</li> 
           <li>jQuery</li> 
           <li>Node + Express</li> 
@@ -140,7 +143,7 @@ const Codecademy = props => (
             <img src="./static/Wander_2.png" />
           </Carousel.Item>
         </Carousel>
-        <div className="folderLinks">
+        <div className="folderLinks manjari">
           <a href="https://wanderlust-noiffion.glitch.me/" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Demo @ Glitch </span> 
           </a><br/>
@@ -151,10 +154,13 @@ const Codecademy = props => (
       </section>
 
       <section className="folderSection">
-        <h2 className="folderProjectTitle" style={{color: 'hsl(202, 21%, 32%)'}}> 
-          Ravenous
-        </h2>
-        <ul className="features">
+        <a href="https://codesandbox.io/s/quizzical-joliot-iy6mx" target="_blank" rel="noopener noreferrer">
+          <h2 className="folderProjectTitle" style={{color: 'hsl(202, 21%, 32%)'}}> 
+            Ravenous
+          </h2>
+        </a><br/>
+
+        <ul className="features manjari">
           <li>React</li> 
         </ul>
         <Carousel className="folderCarousel"> 
@@ -165,7 +171,7 @@ const Codecademy = props => (
             <img src="./static/Ravenous_1.png" />
           </Carousel.Item>
         </Carousel>
-        <div className="folderLinks">
+        <div className="folderLinks manjari">
           <a href="https://codesandbox.io/s/quizzical-joliot-iy6mx" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks"> Demo @ CodeSandbox </span> 
           </a><br/>
@@ -175,11 +181,6 @@ const Codecademy = props => (
     </div>
   </Frame>
 )
-
-
-Codecademy.propTypes = {
-  title: PropTypes.string.isRequired, 
-}
 
 
 export default Codecademy;

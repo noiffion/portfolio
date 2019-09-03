@@ -6,18 +6,21 @@ import Frame     from '../frame/Frame';
 
 const Udacity = props => (
   <Frame>
-    <div className="folderDiv">
+    <div className="folderDiv manjari" >
       <div className="folderTitle"
            style={{color: 'hsl(0, 100%, 99%)',
-           background: 'linear-gradient(45deg, hsl(194, 88%, 50%), hsl(194, 88%, 44%))'}}
+           background: 'linear-gradient(45deg, hsl(194, 88%, 50%), hsl(194, 88%, 44%))',
+           fontFamily: 'Work Sans'}}
       >
-        <h1 > {props.title} projects </h1>
+        <h1>Udacity projects</h1>
       </div>
 
       <section className="folderSection">
-        <h2 className="folderProjectTitle" style={{color: 'hsl(194, 88%, 41%)'}}>
-          Angkor Wat
-        </h2>
+        <a href="https://angkor-wat.glitch.me" target="_blank" rel="noopener noreferrer">
+          <h2 className="folderProjectTitle" style={{color: 'hsl(194, 88%, 41%)'}}>
+            Angkor Wat
+          </h2>
+        </a>
         <ul className="features">
           <li>Vanilla JS</li> 
           <li>Knockout.js</li> 
@@ -46,9 +49,11 @@ const Udacity = props => (
       </section>
 
       <section className="folderSection">
-        <h2 className="folderProjectTitle" style={{color: 'hsl(194, 88%, 41%)'}}> 
-          News database
-        </h2>
+        <a href="https://github.com/noiffion/newsDB" target="_blank" rel="noopener noreferrer"> 
+          <h2 className="folderProjectTitle" style={{color: 'hsl(194, 88%, 41%)'}}> 
+            News database
+          </h2>
+        </a>
         <ul className="features">
           <li>CLI</li> 
           <li>Python3</li> 
@@ -82,9 +87,11 @@ const Udacity = props => (
       </section>
 
       <section className="folderSection">
-        <h2 className="folderProjectTitle" style={{color: 'hsl(194, 88%, 41%)'}}>
-          Shakespeare plays
-        </h2>
+        <a href="https://noiffion.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
+          <h2 className="folderProjectTitle" style={{color: 'hsl(194, 88%, 41%)'}}>
+            Shakespeare plays
+          </h2>
+        </a>
         <ul className="features">
           <li>Python3</li> 
           <li>Flask</li> 
@@ -126,11 +133,6 @@ const Udacity = props => (
     </div>
   </Frame>
 )
-
-
-Udacity.propTypes = {
-  title: PropTypes.string.isRequired, 
-}
 
 
 export default Udacity;

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import PropTypes            from 'prop-types';
 import Link                 from 'next/link';
-import Frame                from '../frame/Frame';
-import projectList          from '../elements/projectList';
-import Articles             from '../elements/Articles';
+import Frame                from '../frame/Frame.js';
+import projectList          from '../elements/projectList.js';
+import Articles             from '../elements/Articles.js';
 
 
 const listMaker = list => {
@@ -14,27 +14,25 @@ const listMaker = list => {
 }
 
 
-
-
 const ProjectFolder = props => (
   <article className="projectFolder">
-    <Link href={`/folders?title=${props.title}`}>
+    <Link href={`/folders?title=${props.link}`}>
       <div className="linkDiv">
         <h2 className="projectTitle" style={{color: props.color}} title="More info and live demo(s)">{props.title}</h2>
       </div>
     </Link>
-    <p> {props.description} </p>
+    <p className="manjari"> {props.description} </p>
     <h5 style={{color: 'gray', fontStyle: 'italic'}}> {props.usedStack} </h5>
     <div className="techStack">
-      <Link href={`/folders?title=${props.title}`}>
+      <Link href={`/folders?title=${props.link}`}>
         <img className="folderImg" alt={props.alt} src={props.imgSrc} title="More info and live demo(s)"/>
       </Link>
-      <ul>
+      <ul className="manjari">
           {listMaker(props.list)}
       </ul>
     </div>
     {props.dispCurr ?
-      (<a href={props.link} style={{color: props.color}}target="_blank" rel="noopener noreferrer">
+      (<a href={props.outLink} style={{color: props.color}}target="_blank" rel="noopener noreferrer">
         {props.title} curriculum
        </a>) : null}
   </article>
@@ -85,12 +83,10 @@ const Index = () => {
             borderBottom: '1px solid #000000',
             borderRadius: '10px',
             padding: '1%',
-            margin: '2% 0 5% 0',
+            margin: '5% 0 5% 0',
           }
           return (
-           <>
-             <h1 style={headerStyle}>{project.title}</h1> 
-           </> 
+            <h1 key={index + '_curriculums'} style={headerStyle}>{project.title}</h1> 
           );
        }
   });

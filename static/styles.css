@@ -26,6 +26,10 @@ a {
   outline: 0;
 }
 
+.manjari {
+  font-family: 'Manjari', sans-serif;
+}
+
 
 /* The style description of the <header> tag (top of the page - a fixed element)*/
 
@@ -340,7 +344,7 @@ footer li {
 .folderLinks {
   line-height: 2;
   text-align: right;
-  font-size: 0.6em;
+  font-size: 1rem;
 }
 
 /* Five breakpoints were defined, significant change under 520px */

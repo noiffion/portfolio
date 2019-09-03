@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { useRouter }        from 'next/router';
 import Udacity              from '../elements/Udacity';
 import Codecademy           from '../elements/Codecademy';
-import FreeCodeCamp         from '../elements/FreeCodeCamp';
-import Personal             from '../elements/Personal';
+import FreeCodeCamp         from '../elements/freeCodeCamp';
+import IssueTracker         from '../elements/IssueTracker.js';
+import Sorters              from '../elements/Sorters.js';
 
 
 const Folders = () => {
@@ -33,13 +34,15 @@ const Folders = () => {
 
   switch (title) {
     case 'Udacity':
-      folder = <Udacity title={title}/>; break; 
+      folder = <Udacity />; break; 
     case 'Codecademy':
-      folder = <Codecademy title={title}/>; break; 
+      folder = <Codecademy />; break; 
     case 'freeCodeCamp':
-      folder = <FreeCodeCamp title={title}/>; break; 
-    case 'Personal':
-      folder = <Personal title={title}/>; break; 
+      folder = <FreeCodeCamp />; break; 
+    case 'IssueTracker':
+      folder = <IssueTracker />; break; 
+    case 'Sorters':
+      folder = <Sorters />; break; 
     default:
       folder = null; break;
   } 

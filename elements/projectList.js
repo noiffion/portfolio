@@ -1,6 +1,7 @@
 const projectList = [
   {
    title: 'Issue Tracker',
+   link: 'IssueTracker',
    description:
      `An Issue tracker application (based on Subramanian: ProMERN book,
       but significantly modified).`,
@@ -14,19 +15,20 @@ const projectList = [
      'Webpack',
      'Babel',
      'Passport',
-     'Eslint'
+     'ESLint'
    ],
-   link: '',
    alt: 'Issue Tracker logo',
    imgSrc: './static/Itracker_icon.png',
+   outLink: null,
    color: 'hsl(219, 18%, 51%)',
    colHov: 'hsl(219, 38%, 51%)',
    displayCurriculum: false,
   },
   {
    title: 'Sorter efficiency',
+   link: 'Sorters',
    description:
-      'Sorting algorithm comparison page built with Next.js.',
+      'Sorting algorithm comparison page built with Next.js using webworkers.',
    usedStack: 'Used technology stack in the project: ',
    list: [
      'React',
@@ -36,13 +38,12 @@ const projectList = [
      'React tiny virtual list',
      'Styled components',
      'Jest',
-     'Eslint',
+     'ESLint',
    ],
-   link: '',
    alt: 'Sorting logo',
    imgSrc: './static/generic-sorting.png',
    color: 'hsl(38, 98%, 52%)',
-   colHov: 'hsl(324, 27%, 14%)',
+   colHov: 'hsl(38, 98%, 72%)',
    displayCurriculum: false,
   },
   {
@@ -59,6 +60,7 @@ const projectList = [
   },
   {
    title: 'freeCodeCamp',
+   link: 'freeCodeCamp',
    description:
      `Five modules have been completed - approximately
       300 hours to finish each one of them:`,
@@ -70,8 +72,8 @@ const projectList = [
      'APIs and Microservices',
      'Information Security and Quality Assurance',
    ],
-   link: 'https://learn.freecodecamp.org/',
-   alt: 'freeCodeCamp logo',
+   outLink: 'https://learn.freecodecamp.org/',
+   alt: 'freecodecamp logo',
    imgSrc: './static/freeCodeCamp.png',
    color: 'hsl(120, 33%, 42%)',
    colHov: 'hsl(120, 53%, 42%)',
@@ -79,6 +81,7 @@ const projectList = [
   },
   {
    title: 'Codecademy',
+   link: 'Codecademy',
    description: 'Web development course - takes about 30 weeks to finish it:',
    usedStack: 'Studied technology stack in the course: ',
    list: [
@@ -90,7 +93,7 @@ const projectList = [
      'SQL',
      'Test Driven Development with Mocha and Chai',
    ],
-   link: 'https://www.codecademy.com/learn/paths/web-development',
+   outLink: 'https://www.codecademy.com/learn/paths/web-development',
    alt: 'Codecademy logo',
    imgSrc: './static/codecademy.jpeg',
    color: 'hsl(202, 21%, 32%)',
@@ -99,6 +102,7 @@ const projectList = [
   },
   {
    title: 'Udacity',
+   link: 'Udacity',
    description: 'Full Stack Web Developer nanodegree program - 4 months long:',
    usedStack: 'Studied technology stack in the course: ',
    list: [
@@ -110,7 +114,7 @@ const projectList = [
      'Authorization / authentication',
      'Deploying Linux servers on Amazon Lightsail',
    ],
-   link: 'https://eu.udacity.com/course/full-stack-web-developer-nanodegree--nd004',
+   outLink: 'https://eu.udacity.com/course/full-stack-web-developer-nanodegree--nd004',
    alt: 'Udacity logo',
    imgSrc: './static/udacity.png',
    color: 'hsl(194, 88%, 47%)',
