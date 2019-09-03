@@ -1,10 +1,9 @@
 import React     from 'react';
-import PropTypes from 'prop-types';
 import Carousel  from 'react-bootstrap/Carousel';
 import Frame     from '../frame/Frame';
 
 
-const FreeCodeCamp = props => (
+const FreeCodeCamp = () => (
   <Frame>
     <div className="folderDiv manjari">
       <div className="folderTitle" 

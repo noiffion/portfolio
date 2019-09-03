@@ -1,10 +1,9 @@
 import React     from 'react';
 import Frame     from '../frame/Frame';
-import PropTypes from 'prop-types';
 import Carousel  from 'react-bootstrap/Carousel';
 
 
-const Codecademy = props => (
+const Codecademy = () => (
   <Frame>
     <div className="folderDiv manjari">
       <div className="folderTitle" 

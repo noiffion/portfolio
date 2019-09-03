@@ -1,5 +1,4 @@
 import React     from 'react';
-import PropTypes from 'prop-types';
 import Frame     from '../frame/Frame';
 import Carousel  from 'react-bootstrap/Carousel';
 
@@ -10,7 +9,7 @@ const description = `An issue tracker application: issues can be recorded (their
  can be deleted, and they can be filtered.`
 
 
-const IssueTracker = props => (
+const IssueTracker = () => (
   <Frame>
     <div className="folderDiv manjari">
       <div className="folderTitle"

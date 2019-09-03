@@ -1,6 +1,4 @@
-
 import React     from 'react';
-import PropTypes from 'prop-types';
 import Frame     from '../frame/Frame';
 import Carousel  from 'react-bootstrap/Carousel';
 
@@ -11,7 +9,7 @@ const description = ` A web app demonstrating how concurrency is possibile with 
  the array displayed and the sorting algorithms themselves are sorted in order of efficiency. 
  More details in the GitHub repo (please, click on the link at the bottom of the page).`;
 
-const Sorters = props => (
+const Sorters = () => (
   <Frame>
     <div className="folderDiv manjari">
       <div className="folderTitle"

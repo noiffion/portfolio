@@ -105,6 +105,9 @@ const Index = () => {
 
 ProjectFolder.propTypes = {
   title: PropTypes.string.isRequired,
+  usedStack: PropTypes.string.isRequired,
+  dispCurr: PropTypes.bool.isRequired,
+  outLink: PropTypes.string,
   color: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
