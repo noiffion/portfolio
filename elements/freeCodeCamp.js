@@ -134,8 +134,8 @@ const FreeCodeCamp = () => (
           </a>
           <a href="https://codepen.io/noiffion/pen/qGMdpB" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Pomodoro</span>
-            <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}</span>
-          </a>@ Codepen
+            <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}@ Codepen</span>
+          </a>
         </div>
       </section>
 
@@ -186,8 +186,8 @@ const FreeCodeCamp = () => (
           </a>
           <a href="https://glitch.com/edit/#!/freecodecamp-api-5?path=server.js:1:0" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">File&nbsp;Metadata</span>
-            <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}</span>
-          </a>@ Glitch 
+            <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}@ Glitch</span>
+          </a> 
         </div>
       </section>
 
@@ -240,8 +240,8 @@ const FreeCodeCamp = () => (
           </a>
           <a href="https://glitch.com/edit/#!/fcc-isqa-v?path=server.js:1:0" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Message&nbsp;Board</span>
-            <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}</span>
-          </a>@ Glitch 
+            <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}@ Glitch</span>
+          </a>
         </div>
       </section>
 

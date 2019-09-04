@@ -68,8 +68,8 @@ const Codecademy = () => (
           </a>
           <a href="https://codepen.io/noiffion/full/NZvXWp" target="_blank" rel="noopener noreferrer">
             <span className="projectLinks">Tsunami coffee</span>
-            <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}</span>
-          </a>@ Codepen
+            <span style={{color: 'hsl(0, 0%, 70%)'}}>&#93;{' '}@ Codepen</span>
+          </a>
         </div>
 
       </section>
