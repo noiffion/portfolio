@@ -369,6 +369,19 @@ footer li {
     font-weight: 400;
   }
 
+  .techStack {
+    width: 90%;
+  }
+
+  #curricHeader {
+    font-size: 2rem;
+  }
+
+  .techStack img {
+    width: 100px;
+    height: 100px;
+  }
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -429,13 +442,25 @@ footer li {
      width: 40px;
   }
 
-  article img {
-    height: 40px;
-    width: 40px;
+  #curricHeader {
+    font-size: 1.5rem;
+  }
+
+  .techStack img {
+    height: 80px;
+    width: 80px;
   }
 
   .projectFolder h2 {
     font-size: 1.5rem;
+  }
+
+  .folderSection p {
+    font-size: 0.8rem;
+  }
+
+  .folderLinks a {
+    font-size: 0.8rem;
   }
 
   #webDev_articles {
@@ -490,6 +515,14 @@ footer li {
     padding: 15px 0 0 0;
   }
 
+  #usedStack {
+    font-size: 0.8rem;
+  }
+
+  #curricHeader {
+    font-size: 1.2rem;
+  }
+
   .folderTitle {
     height: 60px;
     padding: 7px 0 0 0;
@@ -504,6 +537,14 @@ footer li {
     font-size: 0.9rem;
   }
 
+  .folderSection p {
+    font-size: 0.7rem;
+  }
+
+  .folderLinks a {
+    font-size: 0.7rem;
+  }
+
   .features {
     font-size: 0.5rem;
     padding: 20px 0 0 18px;
@@ -512,10 +553,6 @@ footer li {
   .folderLinks {
     text-align: right;
     line-height: normal;
-  }
-
-  .projectLinks {
-    font-size: 0.5rem;
   }
 
   .projectFolder {
@@ -557,6 +594,19 @@ footer li {
     margin: 5px 0 0 0px;
     height: 25px;
     width: 25px;
+  }
+
+  #usedStack {
+    font-size: 0.9rem;
+  }
+
+  #curricHeader {
+    font-size: 0.9rem;
+  }
+
+  .techStack img {
+    height: 60px;
+    width: 60px;
   }
 
   .title_normal {
@@ -618,8 +668,12 @@ footer li {
     line-height: normal;
   }
 
-  .projectLinks {
-    font-size: 10px;
+  .folderSection p {
+    font-size: 0.7rem;
+  }
+
+  .folderLinks a {
+    font-size: 0.6rem;
   }
 
   #webDev_articles {
@@ -695,10 +749,6 @@ footer li {
   .folderLinks {
     text-align: left;
     line-height: normal;
-  }
-
-  .projectLinks {
-    font-size: 10px;
   }
 
   .sidebar {

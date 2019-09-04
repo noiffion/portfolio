@@ -22,7 +22,7 @@ const ProjectFolder = props => (
       </div>
     </Link>
     <p className="manjari"> {props.description} </p>
-    <h5 style={{color: 'gray', fontStyle: 'italic'}}> {props.usedStack} </h5>
+    <h5 id="usedStack" style={{color: 'gray', fontStyle: 'italic'}}> {props.usedStack} </h5>
     <div className="techStack">
       <Link href={`/folders?title=${props.link}`}>
         <img className="folderImg" alt={props.alt} src={props.imgSrc} title="More info and live demo(s)"/>
@@ -86,7 +86,9 @@ const Index = () => {
             margin: '5% 0 5% 0',
           }
           return (
-            <h1 key={index + '_curriculums'} style={headerStyle}>{project.title}</h1> 
+            <h1 id="curricHeader" key={index + '_curriculums'} style={headerStyle}>
+              {project.title}
+            </h1>
           );
        }
   });
